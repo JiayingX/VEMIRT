@@ -1,0 +1,26 @@
+Package: VEMIRT
+Type: Package
+Title: Variational Expectation Maximization for High-dimensional IRT Models
+Version: 1.0
+Date: 2022-10-16
+Author@R: c(person("Jiaying", "Xiao", email = "jxiao6@uw.edu",role = c("aut", "cre")),
+            person("Gongjun", "Xu", email = "gongjun@umich.edu", role = c("aut")),
+            person("Chun", "Wang", email = "wang4066@uw.edu", role = c("aut")))
+Maintainer: Jiaying Xiao <jxiao6@uw.edu>
+Description: VEMIRT is created to assist researchers to conduct exploratory and confirmatory multidimensional item response theory (MIRT) analysis. 
+             The core computation engine of VEMIRT is a family of Gaussian Variational EM algorithms that are considerably more efficient than currently available algorithms in other software packages, 
+             especially when the number of latent factors exceeds 4. 
+License: GPL-3
+Imports: 
+    GPArotation,
+    Matrix,
+    polycor,
+    psych,
+    Rcpp (>= 1.0.9),
+    testit
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+Depends: 
+    R (>= 2.10)
+LazyData: true

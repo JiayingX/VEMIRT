@@ -1,0 +1,348 @@
+[
+    {
+        "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_2pl.cpp",
+        "file_last_write": 1665983605.0,
+        "definitions": [
+            {
+                "usr": "c:@F@ecfa2#&1$@N@arma@S@Mat>#d#S0_#&1I#S2_#S2_#S0_#S0_#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "ecfa2(const arma::mat &, const arma::mat &, const int &, const int &, const int &, const arma::mat &, const arma::mat &, const arma::vec &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_2pl.cpp",
+                "line": 9,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@acfa2#&1$@N@arma@S@Mat>#d#S0_#&1I#S2_#S2_#S0_#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Cube>#d#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "acfa2(const arma::mat &, const arma::mat &, const int &, const int &, const int &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_2pl.cpp",
+                "line": 41,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@lb2pl#&1$@N@arma@S@Mat>#d#S0_#S0_#S0_#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Cube>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lb2pl(const arma::mat &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_2pl.cpp",
+                "line": 73,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_3pl.cpp",
+        "file_last_write": 1666150566.0,
+        "definitions": [
+            {
+                "usr": "c:@F@ecfa3pl#&1$@N@arma@S@Mat>#d#S0_#&1I#&1$@N@arma@S@Col>#d#S2_#S0_#S0_#S0_#S3_#&1$@N@arma@S@Cube>#d#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "ecfa3pl(const arma::mat &, const arma::mat &, const int &, const arma::vec &, const int &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_3pl.cpp",
+                "line": 9,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@s3pl#&1I#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S3_#S3_#S1_#S1_#S3_#&1$@N@arma@S@Cube>#d#S3_#S3_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "s3pl(const int &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::vec &, const arma::mat &, const arma::cube &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_3pl.cpp",
+                "line": 40,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@eta3pl#&1I#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S3_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "eta3pl(const int &, const arma::vec &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_3pl.cpp",
+                "line": 66,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@b3pl#&1I#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Mat>#d#S3_#S3_#S3_#&1d#S3_#S1_#S1_#S5_#S5_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "b3pl(const int &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::mat &, const double &, const arma::mat &, const arma::vec &, const arma::vec &, const double &, const double &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_3pl.cpp",
+                "line": 83,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@acfa3#&1$@N@arma@S@Mat>#d#S0_#&1$@N@arma@S@Col>#d#&1I#S4_#S0_#S0_#S2_#S0_#&1$@N@arma@S@Cube>#d#S0_#S0_#S5_#&1d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "acfa3(const arma::mat &, const arma::mat &, const arma::vec &, const int &, const int &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::cube &, const arma::mat &, const arma::mat &, const arma::cube &, const double &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_3pl.cpp",
+                "line": 105,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@lb3pl#&1$@N@arma@S@Mat>#d#S0_#S0_#&1$@N@arma@S@Col>#d#S0_#S2_#S0_#S2_#&1$@N@arma@S@Cube>#d#S0_#&1d#S6_#S6_#S6_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "lb3pl(const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const double &, const double &, const double &, const double &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/cfa_3pl.cpp",
+                "line": 145,
+                "column": 8,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl.cpp",
+        "file_last_write": 1666067149.0,
+        "definitions": [
+            {
+                "usr": "c:@F@eefa2#&1$@N@arma@S@Mat>#d#&1I#S2_#S2_#S0_#S0_#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "eefa2(const arma::mat &, const int &, const int &, const int &, const arma::mat &, const arma::mat &, const arma::vec &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl.cpp",
+                "line": 8,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@aefa2#&1$@N@arma@S@Mat>#d#&1I#S2_#S2_#S0_#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Cube>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "aefa2(const arma::mat &, const int &, const int &, const int &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl.cpp",
+                "line": 38,
+                "column": 11,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_adaptive_lasso.cpp",
+        "file_last_write": 1666116099.0,
+        "definitions": [
+            {
+                "usr": "c:@F@paal2pl#&1$@N@arma@S@Mat>#d#&1I#S2_#&1d#&1$@N@arma@S@Col>#d#S0_#S0_#S4_#&1$@N@arma@S@Cube>#d#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "paal2pl(const arma::mat &, const int &, const int &, const double &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_adaptive_lasso.cpp",
+                "line": 9,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@paalc22pl#&1$@N@arma@S@Mat>#d#S0_#S0_#&1$@N@arma@S@Col>#d#S2_#&1d#&1I#S0_#S2_#&1$@N@arma@S@Cube>#d#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "paalc22pl(const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::vec &, const double &, const int &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_adaptive_lasso.cpp",
+                "line": 47,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@paalc22pl1#&1$@N@arma@S@Mat>#d#&1I#S2_#S2_#&1d#S0_#&S1_#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Cube>#d#S0_#S5_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "paalc22pl1(const arma::mat &, const int &, const int &, const int &, const double &, const arma::mat &, arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::vec &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_adaptive_lasso.cpp",
+                "line": 93,
+                "column": 11,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_lasso.cpp",
+        "file_last_write": 1666213904.0,
+        "definitions": [
+            {
+                "usr": "c:@F@nalc12pl#&1$@N@arma@S@Mat>#d#S0_#&1$@N@arma@S@Col>#d#&1I#S0_#S2_#&1$@N@arma@S@Cube>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "nalc12pl(const arma::mat &, const arma::mat &, const arma::vec &, const int &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_lasso.cpp",
+                "line": 9,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@palc12pl#&1$@N@arma@S@Mat>#d#&1I#S2_#&1d#&1$@N@arma@S@Col>#d#S0_#S0_#S4_#&1$@N@arma@S@Cube>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "palc12pl(const arma::mat &, const int &, const int &, const double &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_lasso.cpp",
+                "line": 39,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@nalc22pl#&1$@N@arma@S@Mat>#d#&1I#S0_#&1$@N@arma@S@Col>#d#S3_#S2_#S0_#S3_#&1$@N@arma@S@Cube>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "nalc22pl(const arma::mat &, const int &, const arma::mat &, const arma::vec &, const arma::vec &, const int &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_lasso.cpp",
+                "line": 77,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@palc22pl#&1$@N@arma@S@Mat>#d#S0_#&1$@N@arma@S@Col>#d#S2_#&1d#&1I#S0_#S2_#&1$@N@arma@S@Cube>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "palc22pl(const arma::mat &, const arma::mat &, const arma::vec &, const arma::vec &, const double &, const int &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_lasso.cpp",
+                "line": 101,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@palc22pl1#&1$@N@arma@S@Mat>#d#&1I#S2_#S2_#&1d#S0_#&S1_#&1$@N@arma@S@Col>#d#&1$@N@arma@S@Cube>#d#S0_#S5_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "palc22pl1(const arma::mat &, const int &, const int &, const int &, const double &, const arma::mat &, arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::vec &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_2pl_lasso.cpp",
+                "line": 145,
+                "column": 11,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl.cpp",
+        "file_last_write": 1666155138.0,
+        "definitions": [
+            {
+                "usr": "c:@F@eefa3#&1$@N@arma@S@Mat>#d#&1I#&1$@N@arma@S@Col>#d#S2_#S0_#S0_#S0_#S3_#&1$@N@arma@S@Cube>#d#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "eefa3(const arma::mat &, const int &, const arma::vec &, const int &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl.cpp",
+                "line": 8,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@aefa3#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#d#&1I#S4_#S0_#S0_#S2_#S0_#&1$@N@arma@S@Cube>#d#S0_#S0_#S5_#&1d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "aefa3(const arma::mat &, const arma::vec &, const int &, const int &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::cube &, const arma::mat &, const arma::mat &, const arma::cube &, const double &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl.cpp",
+                "line": 40,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_adaptive_lasso.cpp",
+        "file_last_write": 1666159592.0,
+        "definitions": [
+            {
+                "usr": "c:@F@paal3pl#&1$@N@arma@S@Mat>#d#&1I#S2_#&1$@N@arma@S@Col>#d#&1d#S0_#S0_#S0_#S3_#&1$@N@arma@S@Cube>#d#S0_#S5_#S0_#S0_#S0_#S3_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "paal3pl(const arma::mat &, const int &, const int &, const arma::vec &, const double &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const double &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_adaptive_lasso.cpp",
+                "line": 9,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@paalc23pl#&1$@N@arma@S@Mat>#d#S0_#&1$@N@arma@S@Col>#d#S0_#S2_#&1d#S2_#S0_#S2_#&1$@N@arma@S@Cube>#d#S0_#S4_#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "paalc23pl(const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &, const double &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const double &, const arma::mat &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_adaptive_lasso.cpp",
+                "line": 51,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@paalc23pl1#&1$@N@arma@S@Mat>#d#S0_#S0_#&1d#&1$@N@arma@S@Col>#d#S0_#S3_#&1$@N@arma@S@Cube>#d#S0_#S2_#S0_#S0_#S3_#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "paalc23pl1(const arma::mat &, const arma::mat &, const arma::mat &, const double &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const double &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_adaptive_lasso.cpp",
+                "line": 101,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_lasso.cpp",
+        "file_last_write": 1666158655.0,
+        "definitions": [
+            {
+                "usr": "c:@F@nalc13pl#&1$@N@arma@S@Mat>#d#S0_#&1$@N@arma@S@Col>#d#S0_#S0_#S2_#&1$@N@arma@S@Cube>#d#S0_#S0_#S2_#S0_#S4_#&1d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "nalc13pl(const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::cube &, const double &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_lasso.cpp",
+                "line": 9,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@palc13pl#&1$@N@arma@S@Mat>#d#&1I#S2_#&1$@N@arma@S@Col>#d#&1d#S0_#S0_#S0_#S3_#&1$@N@arma@S@Cube>#d#S0_#S5_#S0_#S0_#S3_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "palc13pl(const arma::mat &, const int &, const int &, const arma::vec &, const double &, const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const double &, const arma::mat &, const arma::mat &, const arma::vec &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_lasso.cpp",
+                "line": 48,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@nalc23pl#&1$@N@arma@S@Mat>#d#&1I#S2_#S0_#&1$@N@arma@S@Col>#d#S3_#S0_#S0_#S3_#&1$@N@arma@S@Cube>#d#S0_#S3_#S0_#S5_#&1d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "nalc23pl(const arma::mat &, const int &, const int &, const arma::mat &, const arma::vec &, const arma::vec &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::cube &, const double &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_lasso.cpp",
+                "line": 89,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@palc23pl#&1$@N@arma@S@Mat>#d#S0_#&1$@N@arma@S@Col>#d#S0_#S2_#&1d#S2_#S0_#S2_#&1$@N@arma@S@Cube>#d#S0_#S4_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "palc23pl(const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::vec &, const double &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const double &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_lasso.cpp",
+                "line": 118,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@palc23pl1#&1$@N@arma@S@Mat>#d#S0_#S0_#&1d#&1$@N@arma@S@Col>#d#S0_#S3_#&1$@N@arma@S@Cube>#d#S0_#S2_#S0_#S0_#S3_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "palc23pl1(const arma::mat &, const arma::mat &, const arma::mat &, const double &, const arma::vec &, const arma::mat &, const arma::vec &, const arma::cube &, const arma::mat &, const double &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &, const arma::mat &)",
+                "file": "R:/Project/scim/VEMIRT/VEMIRT/src/efa_3pl_lasso.cpp",
+                "line": 168,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]
