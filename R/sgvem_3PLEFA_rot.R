@@ -35,8 +35,10 @@
 #' @seealso \code{\link{sgvem_3PLEFA_lasso}}, \code{\link{sgvem_3PLEFA_adaptlasso}}
 #' @export
 #'
-#' @examples sgvem_3PLEFA_rot(exampleData_3pl, 3,samp=50,forgetrate=0.51,mu_b=0,sigma2_b=4,Alpha=10,Beta=40,max.iter=5000,rot="Promax")
+#' @examples sgvem_3PLEFA_rot(exampleData_3pl, 3,samp=50,forgetrate=0.51,
+#' mu_b=0,sigma2_b=4,Alpha=10,Beta=40,max.iter=5000,rot="Promax")
 sgvem_3PLEFA_rot <- function(u,domain, samp=50,forgetrate=0.51,mu_b,sigma2_b,Alpha,Beta,max.iter=5000,rot="Promax") {
+  start=Sys.time()
   u=data.matrix(u)
   person=dim(u)[1]
   item=dim(u)[2]
@@ -251,6 +253,12 @@ sgvem_3PLEFA_rot <- function(u,domain, samp=50,forgetrate=0.51,mu_b,sigma2_b,Alp
   #AIC, BIC
   bic = log(person)*sum(Q_mat) - 2*lbound
   aic = 2*sum(Q_mat) -2*lbound
+  if(n==max.iter){
+    warning("The maximum number of EM cycles reached!",call.=FALSE)
+  }
+  end=Sys.time()
+  duration=end-start
+  cat(paste("Total Execution Time:", round(duration[[1]], 2),  units(duration)),"\n")
   return(list(ra=new_a,rb=new_b,rc=new_c,rs = new_s,
               reta = eta,reps=xi,rsigma = Sigma,mu_i = MU,
               sig_i = SIGMA,n=n,Q_mat=Q_mat,rk=rk,GIC=gic,AIC=aic,

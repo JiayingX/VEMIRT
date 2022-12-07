@@ -28,6 +28,7 @@
 #' @examples
 #' gvem_2PLCFA(exampleData_2pl, exampleIndic_cfa2pl)
 gvem_2PLCFA <- function(u,indic,max.iter=5000) {
+  start=Sys.time()
   u=data.matrix(u)
   indic=data.matrix(indic)
   domain=dim(indic)[2]
@@ -89,6 +90,12 @@ gvem_2PLCFA <- function(u,indic,max.iter=5000) {
   #AIC, BIC
   bic = log(person)*sum(Q_mat) - 2*lbound
   aic = 2*sum(Q_mat) -2*lbound
+  if(n==max.iter){
+    warning("The maximum number of EM cycles reached!",call.=FALSE)
+  }
+  end=Sys.time()
+  duration=end-start
+  cat(paste("Total Execution Time:", round(duration[[1]], 2),  units(duration)),"\n")
   return(list(ra=new_a,rb=new_b,reta = eta,reps=xi,rsigma = Sigma,
               mu_i = MU,sig_i = SIGMA,n=n,Q_mat=Q_mat,GIC=gic,AIC=aic,
               BIC=bic))

@@ -7,7 +7,7 @@
 \packageDescription{VEMIRT}
 }
 \details{
-The package includes three modules: parallel analysis, exploratory and confirmatory analysis for M2PL and M3PL models. The number of factors can be identified via parallel analysis using the \code{\link{pa_poly}} function. To conduct the exploratory analysis, the  Gaussian Variational EM (GVEM) algorithms with post-hoc rotation (Promax & CF-Quartimax), Lasso, or adaptive Lasso are provided. The stochastic GVEM is implemented to futher imporve the computational efficacy when analyzing M3PL models. The package also supports the confirmatory analysis by using the  \code{\link{gvem_2PLCFA}} and  \code{\link{sgvem_3PLCFA}} functions.
+The package includes three modules: parallel analysis, exploratory and confirmatory analysis for M2PL and M3PL models. The number of factors can be identified via parallel analysis using the \code{\link{pa_poly}} function. To conduct the exploratory analysis, the  Gaussian Variational EM (GVEM) algorithms with post-hoc rotation (Promax & CF-Quartimax), Lasso, or adaptive Lasso are provided. The stochastic GVEM is implemented to futher imporve the computational effficiency when analyzing M3PL models. The package also supports the confirmatory analysis by using the  \code{\link{gvem_2PLCFA}} and  \code{\link{sgvem_3PLCFA}} functions.
 }
 \author{
 \itemize{

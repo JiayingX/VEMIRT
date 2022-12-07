@@ -39,8 +39,8 @@ a list containing the following objects:
 Exploratory M2PL Analysis with Post-hoc Rotation
 }
 \examples{
-gvem_2PLCFA(exampleData_2pl, domain=5,max.iter=3000)
-gvem_2PLCFA(exampleData_2pl, domain=5,rot="cfQ")
+gvem_2PLEFA_rot(exampleData_2pl, domain=5,max.iter=3000)
+gvem_2PLEFA_rot(exampleData_2pl, domain=5,rot="cfQ")
 }
 \seealso{
 \code{\link{gvem_2PLEFA_lasso}}, \code{\link{gvem_2PLEFA_adaptlasso}}

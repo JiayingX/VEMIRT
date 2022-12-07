@@ -29,14 +29,21 @@ appropriate lasso penalty would recover the true zero structure. Also see \code{
 \item{max.iter}{the maximum number of iterations for the EM cycle; default is 5000}
 
 \item{constrain}{the constraint setting: \code{"C1"} or \code{"C2"}. To ensure
-identifiability, \code{"C1"} sets a \eqn{K \times K} sub-matrix of \code{indic} to be an
-identity matrix, and the variance of the population variance-covariance matrix to be 1.
-Instead of setting all off-diagonals of a sub-matrix to be zero, \code{"C2"} keeps the
-sub-matrix to be a triangular matrix with the diagonal being ones. That is, there
+identifiablity, \code{"C1"} sets a \eqn{K \times K} sub-matrix of \code{indic} to be an
+identity matrix.This constraint anchor \eqn{K} factors by designating \eqn{K} items that load solely on each factor respectively.
+Note that the \eqn{K \times K} matrix does not have to appear at the top of the \code{indic} matrix.
+\code{"C2"} sets the \eqn{K \times K} sub-matrix to be a lower triangular matrix with the diagonal being ones. That is, there
 are test items associated with each factor for sure and they may be associated
-with other factors as well. Nonzero entries except for the diagonal entries of the
-sub-matrix are penalized during the estimation procedure. Although, \code{"C2"}
-is much weaker than \code{"C1"}, it still ensures empirical identifiability. Default is \code{"C1"}}
+with other factors as well. Nonzero entries (in the lower triangular part) except for the diagonal entries of the
+sub-matrix are penalized during the estimation procedure. For instance, assume \eqn{K=3}, then the \code{"C2"} constraint will
+imply the following submatrix: \eqn{C2=\begin{bmatrix} 1 & 0 & 0\\ 1 & 1 & 0\\ 1 & 1 & 1\\\end{bmatrix}}. As shown, item 1 is allowed to only
+load on the first factor, item 2 will for sure load on the second factor but it may also load on the first factor (hence a penalty is added
+on the \eqn{(2,1)} element of \code{"C1"}, i.e., \eqn{C2_{2,1}} ). Item 3 will for sure load on the third factor but it may also load on the
+first two factors. However, note that for all remaining items their loading vector will all be \eqn{(1, 1, 1)} hence indistinguishable from the
+third anchor item. Therefore, we need to alert the algorithm that this third anchor item will for sure load on the third factor, and
+and whether or not it loads on the first two factors depends on the regularization results. Therefore, we need to specify
+\code{"non_pen="} to identify the \eqn{K}th anchor item. Although, \code{"C2"} is much weaker than \code{"C1"}, it still ensures empirical identifiability. Default is \code{"C1"}.
+During estimation, under both the \code{"C1"} and \code{"C1"} constraints, the population means and variances are constrained to be 0 and 1, respectively.}
 
 \item{non_pen}{the index of an item which is associated with each factor to satisfy \code{"C2"}.
 For \code{C1}, the input can be \code{NULL}}

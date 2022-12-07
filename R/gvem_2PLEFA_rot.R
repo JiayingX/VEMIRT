@@ -26,10 +26,11 @@
 #' @export
 #'
 #' @examples
-#' gvem_2PLCFA(exampleData_2pl, domain=5,max.iter=3000)
+#' gvem_2PLEFA_rot(exampleData_2pl, domain=5,max.iter=3000)
 #' @examples
-#' gvem_2PLCFA(exampleData_2pl, domain=5,rot="cfQ")
+#' gvem_2PLEFA_rot(exampleData_2pl, domain=5,rot="cfQ")
 gvem_2PLEFA_rot <- function(u, domain,max.iter=5000,rot="Promax") {
+  start=Sys.time()
   u=data.matrix(u)
   person=dim(u)[1]
   item=dim(u)[2]
@@ -119,6 +120,12 @@ gvem_2PLEFA_rot <- function(u, domain,max.iter=5000,rot="Promax") {
   #AIC, BIC
   bic = log(person)*sum(Q_mat) - 2*lbound
   aic = 2*sum(Q_mat) -2*lbound
+  if(n==max.iter){
+    warning("The maximum number of EM cycles reached!",call.=FALSE)
+  }
+  end=Sys.time()
+  duration=end-start
+  cat(paste("Total Execution Time:", round(duration[[1]], 2),  units(duration)),"\n")
   return(list(ra=new_a,rb=new_b,reta = eta,reps=xi,rsigma = Sigma,mu_i = MU,
               sig_i = SIGMA,n=n,rk=rk,Q_mat=Q_mat,GIC=gic,AIC=aic,
               BIC=bic,ur_a=ur_a))

@@ -65,7 +65,8 @@ a list containing the following objects:
 Stochastic GVEM for Exploratory M3PL Analysis
 }
 \examples{
-sgvem_3PLEFA_rot(exampleData_3pl, 3,samp=50,forgetrate=0.51,mu_b=0,sigma2_b=4,Alpha=10,Beta=40,max.iter=5000,rot="Promax")
+sgvem_3PLEFA_rot(exampleData_3pl, 3,samp=50,forgetrate=0.51,
+mu_b=0,sigma2_b=4,Alpha=10,Beta=40,max.iter=5000,rot="Promax")
 }
 \seealso{
 \code{\link{sgvem_3PLEFA_lasso}}, \code{\link{sgvem_3PLEFA_adaptlasso}}

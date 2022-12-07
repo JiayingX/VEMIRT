@@ -38,8 +38,10 @@
 #' @seealso \code{\link{gvem_2PLCFA}}
 #' @export
 #'
-#' @examples sgvem_3PLCFA(exampleData_3pl, exampleIndic_cfa3pl,samp=50,forgetrate=0.51,mu_b=0,sigma2_b=4,Alpha=10,Beta=40)
+#' @examples sgvem_3PLCFA(exampleData_3pl, exampleIndic_cfa3pl,samp=50,forgetrate=0.51,
+#' mu_b=0,sigma2_b=4,Alpha=10,Beta=40)
 sgvem_3PLCFA <- function(u,indic,samp=50,forgetrate=0.51,mu_b,sigma2_b,Alpha,Beta,max.iter=5000) {
+  start=Sys.time()
   u=data.matrix(u)
   indic=data.matrix(indic)
   domain=dim(indic)[2]
@@ -172,6 +174,12 @@ sgvem_3PLCFA <- function(u,indic,samp=50,forgetrate=0.51,mu_b,sigma2_b,Alpha,Bet
   #AIC, BIC
   bic = log(person)*sum(Q_mat) - 2*lbound
   aic = 2*sum(Q_mat) -2*lbound
+  if(n==max.iter){
+    warning("The maximum number of EM cycles reached!",call.=FALSE)
+  }
+  end=Sys.time()
+  duration=end-start
+  cat(paste("Total Execution Time:", round(duration[[1]], 2),  units(duration)),"\n")
   return(list(ra=new_a,rb=new_b,rc=new_c,rs = new_s,
               reta = eta,reps=xi,rsigma = rsigma,mu_i = MU,sig_i = SIGMA,n=n,
               Q_mat=Q_mat,GIC=gic,AIC=aic,
