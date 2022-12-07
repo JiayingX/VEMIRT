@@ -60,12 +60,12 @@ gvem_2PLEFA_lasso<-function(u,indic,max.iter=5000,constrain="C1",non_pen=NULL){
   indic=data.matrix(indic)
   domain=dim(indic)[2]
   if(constrain=="C1"){
-    result=vem_2PLEFA_L1_const1_all(u,domain,indic,max.iter)
+    invisible(capture.output(result<-vem_2PLEFA_L1_const1_all(u,domain,indic,max.iter)))
   }else{
     if(is.null(non_pen)){
       stop('non_pen argument is required for the C2 constraint',call.=FALSE)
     }else{
-      result=vem_2PLEFA_L1_const2_all(u,domain,indic,non_pen,max.iter)
+      invisible(capture.output(result<-vem_2PLEFA_L1_const2_all(u,domain,indic,non_pen,max.iter)))
     }
   }
   if(result$lbd==0.1 || result$lbd==40){

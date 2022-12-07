@@ -76,14 +76,14 @@ sgvem_3PLEFA_lasso<-function(u,indic,samp=50,forgetrate=0.51,
   indic=data.matrix(indic)
   domain=dim(indic)[2]
   if(constrain=="C1"){
-    result=sgvem_3PLEFA_L1_const1_all(u,domain,indic,samp,forgetrate,
-                                      mu_b,sigma2_b,Alpha,Beta,max.iter)
+    invisible(capture.output(result<-sgvem_3PLEFA_L1_const1_all(u,domain,indic,samp,forgetrate,
+                                      mu_b,sigma2_b,Alpha,Beta,max.iter)))
   }else{
     if(is.null(non_pen)){
       stop('non_pen argument is required for the C2 constraint',call.=FALSE)
     }else{
-      result=sgvem_3PLEFA_L1_const2_all(u,domain,samp,forgetrate,
-                                            mu_b,sigma2_b,Alpha,Beta,indic,non_pen,max.iter)
+      invisible(capture.output(result<-sgvem_3PLEFA_L1_const2_all(u,domain,samp,forgetrate,
+                                            mu_b,sigma2_b,Alpha,Beta,indic,non_pen,max.iter)))
     }
   }
   if(result$lbd==0.1 || result$lbd==40){
