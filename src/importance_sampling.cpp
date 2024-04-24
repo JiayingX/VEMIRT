@@ -93,8 +93,8 @@ List importance_gradient(const arma::mat& y, const arma::mat& a, const arma::vec
       }
     }
   }
-  grad_a = grad_a / S;
-  grad_b = grad_b / S;
-  grad_Sigma_theta = grad_Sigma_theta / S;
+  grad_a = grad_a / (S*person);
+  grad_b = grad_b / (S*person);
+  grad_Sigma_theta = grad_Sigma_theta / (S*person);
   return List::create(Named("grad_a") = grad_a,Named("grad_b") = grad_b,Named("grad_Sigma_theta") = grad_Sigma_theta);
 }

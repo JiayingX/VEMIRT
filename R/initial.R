@@ -157,8 +157,8 @@ importance_gradient_descent <- function(u, ra, rb, rsigma, mu_i, sig_i, indic, l
     new_Sigma_theta <- (new_Sigma_theta + t(new_Sigma_theta)) / 2
 
     #rescale new_a
-    new_a=new_a%*%d_temp
-    e <- max(c(norm(as.vector(new_a)-as.vector(old_a),type="2"), norm(new_b-old_b,type="2"), norm(as.vector(new_Sigma_theta)-as.vector(old_Sigma_theta),type="2")))
+    #new_a=new_a%*%d_temp
+    e <- max(c(svd(new_a-old_a)$d[1], norm(new_b-old_b,type="2"),svd(new_Sigma_theta-old_Sigma_theta)$d[1]))
     if (e < eps) {
       break
     }

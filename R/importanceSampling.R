@@ -31,7 +31,7 @@
 #'   \item{new_b}{item difficulty parameters estimated by IW-GVEM, vector of length \eqn{J}}
 #'   \item{new_Sigma_theta}{population variance-covariance matrix estimated by IV-GVEM, a \eqn{K \times K} matrix}
 #'   \item{best_lr}{The learning rate used for importance sampling}
-#'   \item{best_lr}{The lower bound value for importance sampling}
+#'   \item{best_lb}{The lower bound value for importance sampling}
 #' @seealso \code{\link{gvem_2PLCFA}}, \code{\link{gvem_2PLEFA_rot}},\code{\link{bs_2PLCFA}}
 #' @export
 #'
@@ -50,7 +50,8 @@ importanceSampling<-function(u,gvem_result,S=10,M=10,max.iter=10){
   theta_IS <- sampling(gvem_result$mu_i,gvem_result$sig_i,person,domain,S,M)
   lr_list <- c(0.5, 0.1, 0.05, 0.01)
   best_lr = 0
-  best_lb = 0
+  best_lb = -Inf
+  best_result=NULL
   for (i in 1:length(lr_list)) {
     lr =lr_list[i]
     new_results<-importance_gradient_descent(u, gvem_result$ra, gvem_result$rb, gvem_result$rsigma,
@@ -60,13 +61,14 @@ importanceSampling<-function(u,gvem_result,S=10,M=10,max.iter=10){
                                    new_results$new_Sigma_theta, u, person,dim(u)[2], S, M)$w_tildesub
     #lower bound
     lb_val <- sum(colMeans(log(w_tildesub)))
-    if(lb_val>best_lr){
-      best_lr = best_lr
+    if(lb_val>best_lb){
+      best_lr = lr
       best_lb = lb_val
+      best_result = new_results
     }
   }
-  new_results<-c(gvem_result,new_results)
-  new_results$best_lr = best_lr
-  new_results$best_lb = best_lb
-  return(new_results)
+  best_result<-c(gvem_result,best_result)
+  best_result$best_lr = best_lr
+  best_result$best_lb = best_lb
+  return(best_result)
 }

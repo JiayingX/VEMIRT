@@ -41,7 +41,7 @@ a list containing the following objects:
   \item{new_b}{item difficulty parameters estimated by IW-GVEM, vector of length \eqn{J}}
   \item{new_Sigma_theta}{population variance-covariance matrix estimated by IV-GVEM, a \eqn{K \times K} matrix}
   \item{best_lr}{The learning rate used for importance sampling}
-  \item{best_lr}{The lower bound value for importance sampling}
+  \item{best_lb}{The lower bound value for importance sampling}
 }
 \description{
 An importance weighted version of GVEM (i.e., IW-GVEM) can be implemented
